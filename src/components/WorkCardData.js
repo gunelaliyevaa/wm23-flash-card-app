@@ -2,6 +2,8 @@ import LocalNews from "../assets/local-news.png"
 import LightRide from "../assets/light-ride.png"
 import Products from "../assets/products-website.png"
 
+//We pass this data to Work.js file to dynamically create Project cards.
+
 const ProjectCardData = [
     {
         image: LocalNews,
@@ -18,12 +20,10 @@ const ProjectCardData = [
     {
         image: Products,
         title: "Products Catalogue",
-        text: "The web application that fetches product data from an external API, displays it on the home page, and provides additional features such as searching, filtering, and pagination. Here are the instructions for setting up and running the application.",
+        text: "This products catalogue web application fetches product data from an external API, called DummyJSON, using endpoints, displays it on the home page, and provides additional features such as searching, filtering based on title, category, description, and pagination.",
         link: "https://gunelaliyevaa.github.io/wm23-assignment-2/"
     }
 ]
 
 export default ProjectCardData;
 
-
-//We pass this data to Work.js file to dynamically create Project cards.

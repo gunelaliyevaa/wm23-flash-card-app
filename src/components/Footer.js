@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Footer.css"
+import "./style/Footer.css"
 import {FaGithub, FaHome, FaLinkedin, FaMailBulk, FaPhone} from "react-icons/fa";
 
 export default function Footer() {
@@ -40,6 +40,5 @@ export default function Footer() {
                 </div>
             </div>
         </div>
-    )
-        ;
+    );
 }

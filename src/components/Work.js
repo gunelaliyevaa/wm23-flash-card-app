@@ -1,8 +1,11 @@
-import "./WorkCard.css"
+import "./style/WorkCard.css"
 import React from 'react';
 import WorkCard from "./WorkCard";
 import WorkCardData from "./WorkCardData"
 
+
+//We get data from WorkCardData and create dynamic WorkCards using map()
+//Work component renders a container for the WorkCard components, passing data to them through props
 export default function Work() {
     return (
         <div className="work-container">
@@ -22,6 +25,3 @@ export default function Work() {
         </div>
     );
 }
-
-//We get data from WorkCardData and create dynamic WorkCards using map()
-//Work component renders a container for the WorkCard components, passing data to them through props
