@@ -1,0 +1,139 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "front": "What is React?",
+      "back": "A JavaScript library for building user interfaces.",
+      "status": "learned",
+      "lastModified": "2023-01-01T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "front": "What is JSX?",
+      "back": "JSX is a syntax extension for JavaScript recommended for use with React.",
+      "status": "wantToLearn",
+      "lastModified": "2023-01-02T14:45:00Z"
+    },
+    {
+      "id": 3,
+      "front": "What is the Virtual DOM?",
+      "back": "The virtual DOM is a lightweight copy of the real DOM used for performance optimization.",
+      "status": "learned",
+      "lastModified": "2023-01-03T09:15:00Z"
+    },
+    {
+      "id": 4,
+      "front": "What is a React Component?",
+      "back": "A reusable, self-contained piece of code that renders UI elements.",
+      "status": "noted",
+      "lastModified": "2023-01-04T18:20:00Z"
+    },
+    {
+      "id": 5,
+      "front": "What is the purpose of useState hook?",
+      "back": "useState is a hook in React that allows functional components to manage state.",
+      "status": "learned",
+      "lastModified": "2023-01-05T12:10:00Z"
+    },
+    {
+      "id": 6,
+      "front": "What is the difference between props and state?",
+      "back": "Props are immutable and passed from parent to child, while state is mutable and managed within a component.",
+      "status": "wantToLearn",
+      "lastModified": "2023-01-06T16:30:00Z"
+    },
+    {
+      "id": 7,
+      "front": "What is React Router?",
+      "back": "React Router is a standard library for routing in React applications.",
+      "status": "noted",
+      "lastModified": "2023-01-07T21:45:00Z"
+    },
+    {
+      "id": 8,
+      "front": "What is the useEffect hook used for?",
+      "back": "useEffect is used for handling side effects in functional components, such as data fetching or subscriptions.",
+      "status": "learned",
+      "lastModified": "2023-01-08T08:55:00Z"
+    },
+    {
+      "id": 9,
+      "front": "How does React handle forms?",
+      "back": "React uses controlled components to handle forms by maintaining the form data in the component's state.",
+      "status": "wantToLearn",
+      "lastModified": "2023-01-09T17:20:00Z"
+    },
+    {
+      "id": 10,
+      "front": "What is the purpose of useContext hook?",
+      "back": "useContext is used for consuming values from React context in functional components.",
+      "status": "noted",
+      "lastModified": "2023-01-10T11:30:00Z"
+    },
+    {
+      "id": 11,
+      "front": "What is Redux?",
+      "back": "Redux is a predictable state container for JavaScript apps, often used with React.",
+      "status": "learned",
+      "lastModified": "2023-01-11T14:15:00Z"
+    },
+    {
+      "id": 12,
+      "front": "What is the purpose of useCallback hook?",
+      "back": "useCallback is used to memoize callback functions in React to prevent unnecessary re-renders.",
+      "status": "wantToLearn",
+      "lastModified": "2023-01-12T19:45:00Z"
+    },
+    {
+      "id": 13,
+      "front": "How does React handle keys in lists?",
+      "back": "React uses keys to efficiently update the UI in lists by uniquely identifying each element.",
+      "status": "noted",
+      "lastModified": "2023-01-13T15:50:00Z"
+    },
+    {
+      "id": 14,
+      "front": "What is the purpose of useMemo hook?",
+      "back": "useMemo is used to memoize the result of a function and optimize performance in React.",
+      "status": "learned",
+      "lastModified": "2023-01-14T12:40:00Z"
+    },
+    {
+      "id": 15,
+      "front": "What are React Hooks?",
+      "back": "React Hooks are functions that enable functional components to use state and lifecycle features.",
+      "status": "wantToLearn",
+      "lastModified": "2023-01-15T09:30:00Z"
+    }
+  ],
+  "messages": [
+    {
+      "name": "hbzhc",
+      "email": "gunelaliyevaa01@gmail.com",
+      "subject": "since ",
+      "text": "cb b ",
+      "id": 1
+    },
+    {
+      "name": "Gunel Aliyeva",
+      "email": "gunelaliyevaa07@gmail.com",
+      "subject": "First Email",
+      "text": "Hey! This  is the first message to you :)",
+      "id": 2
+    },
+    {
+      "name": "Tom Riddle",
+      "email": "tommarvoloriddle@gmail.com",
+      "subject": "Important Notice",
+      "text": "I left behind a diary, preserving my sixteen-year-old self in its pages, so that one day, with luck, I would be able to lead another in my footsteps, and finish Salazar Slytherin’s noble work.",
+      "id": 3
+    },
+    {
+      "name": "Christian Coulson",
+      "email": "christiancl@gmail.com",
+      "subject": "Test",
+      "text": "We have exam tomorrow!!",
+      "id": 4
+    }
+  ]
+}
