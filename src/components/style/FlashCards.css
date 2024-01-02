@@ -1,0 +1,60 @@
+
+.card-grid{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 40px;
+}
+
+.fc-container{
+    margin: 2rem;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: snow;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+    transform-style: preserve-3d;
+    transition: 0.4s;
+    padding: 1.2rem 1rem;
+}
+
+.card:hover {
+    --translate-y: -2px;
+}
+
+
+.card.flip {
+    --rotate-y: 180deg;
+}
+
+
+.card .front,
+.card .back {
+    position: absolute;
+    padding: 1rem;
+    backface-visibility: hidden;
+}
+
+
+.card .back {
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+.card .front {
+    left: 0;
+}
+
+
+@media screen and (max-width: 740px) {
+    .card-grid {
+        grid-template-columns: auto;
+    }
+}
