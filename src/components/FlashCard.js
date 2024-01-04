@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import "../components/style/FlashCards.css"
-import EditCardForm from "./EditCardForm";
+import EditForm from "./EditForm";
 
 export default function FlashCard({flashcard, onDeleteCard, onEditCard, isEditing, onSaveEdit, onCancelEdit}) {
 
@@ -12,7 +12,6 @@ export default function FlashCard({flashcard, onDeleteCard, onEditCard, isEditin
     };
 
     const handleDelete = (event) => {
-        // Stop the click event from propagating to the card flip action
         event.stopPropagation();
         onDeleteCard(flashcard.id);
     };
@@ -24,27 +23,21 @@ export default function FlashCard({flashcard, onDeleteCard, onEditCard, isEditin
     };
 
 
-    return (
-        <div className={flip ? "card flip" : "card"}
-             onClick={() => setFlip(prevFlip => !prevFlip)}>
-            <div className="front">
-                {isEditing ? (
-                    <EditCardForm flashcard={flashcard} onSaveEdit={onSaveEdit} onCancelEdit={onCancelEdit}/>
-                ) : (
-                    <>
-                        {flashcard.front}
-                        <span>Last Modified: {formatLastModified(flashcard.lastModified)}</span>
-                        <span>Status: {flashcard.status}</span>
-                        <div className="edit-buttons">
-                            <button className="hover-btn" onClick={handleEdit}>Edit</button>
-                            <button className="hover-btn" onClick={handleDelete}>Delete</button>
-                        </div>
-                    </>
-                )}
-            </div>
-            <div className="back">
-                {flashcard.back}
-            </div>
+    return (<div className={flip ? "card flip" : "card"}
+                 onClick={() => setFlip(prevFlip => !prevFlip)}>
+        <div className="front">
+            {isEditing ? (
+                <EditForm flashcard={flashcard} onSaveEdit={onSaveEdit} onCancelEdit={onCancelEdit}/>) : (<>
+                {flashcard.front}
+                <span>Status: {flashcard.status} <br/>Last Modified: {formatLastModified(flashcard.lastModified)}</span>
+                <div className="edit-buttons">
+                    <button className="hover-btn" onClick={handleEdit}>Edit</button>
+                    <button className="hover-btn" onClick={handleDelete}>Delete</button>
+                </div>
+            </>)}
         </div>
-    );
+        <div className="back">
+            {flashcard.back}
+        </div>
+    </div>);
 }
