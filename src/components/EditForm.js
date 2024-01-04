@@ -1,7 +1,6 @@
-// EditCardForm.js
 import React, {useState} from 'react';
 
-export default function EditCardForm({flashcard, onSaveEdit, onCancelEdit}) {
+export default function EditForm({flashcard, onSaveEdit, onCancelEdit}) {
     const [editedFront, setEditedFront] = useState(flashcard.front);
     const [editedBack, setEditedBack] = useState(flashcard.back);
 
