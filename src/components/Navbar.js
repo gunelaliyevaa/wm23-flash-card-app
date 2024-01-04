@@ -22,7 +22,7 @@ export default function Navbar() {
     return (
         <div className={color ? "header header-bg" : "header"}>
             <Link to="/">
-                <h1>Gunel Aliyeva☆</h1>
+                <h1>Gunel Aliyeva.</h1>
             </Link>
 
             <ul className={click ? "nav-menu active" : "nav-menu"}>
