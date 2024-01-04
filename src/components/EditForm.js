@@ -11,7 +11,7 @@ export default function EditForm({flashcard, onSaveEdit, onCancelEdit}) {
             front: editedFront,
             back: editedBack,
             status: flashcard.status,
-            lastModified: flashcard.lastModified,
+            lastModified: Date.now(),
         };
         onSaveEdit(editedCard);
     };
