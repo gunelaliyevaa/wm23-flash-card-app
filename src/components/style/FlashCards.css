@@ -41,6 +41,7 @@
 .back {
     transform: rotateY(180deg);
     text-align: center;
+    color: darkred;
 }
 
 .front {
