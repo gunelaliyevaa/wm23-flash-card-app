@@ -54,3 +54,7 @@ Starts a json-server to mock API responses. Data is read from *db.json*. The ser
 - [react-router-dom](https://reactrouter.com/web/guides/quick-start): Declarative routing for React.js.
 - [react-scripts](https://create-react-app.dev/docs/available-scripts/): Create React App scripts and configuration.
 - [web-vitals](https://www.npmjs.com/package/web-vitals): Library for measuring web vitals.
+
+## Links
+
+Link to GitHub Pages - [https://gunelaliyevaa.github.io/wm23-flash-card-app/](https://gunelaliyevaa.github.io/wm23-flash-card-app/)
